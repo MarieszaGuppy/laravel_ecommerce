@@ -10,18 +10,17 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     @yield('header')
-    @vite(['resources/js/app.js'])
+    {{-- @vite(['resources/js/app.js']) --}}
 </head>
 
+{{-- tess --}}
 <body>
 
     @include('components.navbar')
 
-    <div class="container">
-        @yield('container')
-    </div>
+    @yield('container')
 
-    <div class="bg-dark" data-bs-theme="white">
+    <div style="background-color: #009785" data-bs-theme="white">
         @include('components.footer')
     </div>
 
