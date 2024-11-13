@@ -34,11 +34,7 @@
                     <a class="nav-link fw-semibold" aria-current="page" href="#">Blog</a>
                 </li>
                 <li class="nav-item">
-
-                    <a class="nav-link" aria-current="page" href="{{url('about')}}">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#">Contact</a>
+                    <a class="nav-link fw-semibold" aria-current="page" href="{{url('about')}}">About</a>
                 </li>
                 <li>
                     <a class="nav-link fw-semibold" aria-current="page" href="#">Contact</a>
