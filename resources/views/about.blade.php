@@ -27,7 +27,7 @@
     <h2>Process Business</h2>
     <hr style="color: #009785;">
       <h2 class="featurette-heading fw-normal lh-1 align-item-center text-center">(Lanjutan Profile Bilaperlu dan bagus) </h2>
-      <p class="lead">( Lanjutan dari deskripsi entah tentang kerjasama atau tentang perusahaan)</p>
+      <p class="lead">( Lanjutan dari deskripsi entah tentang kerjasama atau tentang perusahaan belanja)</p>
     </div>
     </div>
     </div>
