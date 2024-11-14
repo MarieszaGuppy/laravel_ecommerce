@@ -20,7 +20,7 @@
 
     @yield('container')
 
-    <div style="background-color: #009785" data-bs-theme="white">
+    <div style="background-color: #23a548" data-bs-theme="white">
         @include('components.footer')
     </div>
 
