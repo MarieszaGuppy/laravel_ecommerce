@@ -1,4 +1,5 @@
-<nav class="navbar navbar-expand-lg px-3 py-3 sticky-top" style="box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1); background-color: #1bac25">
+<nav class="navbar navbar-expand-lg px-3 py-3 sticky-top"
+    style="box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1); background-color: #1bac25">
     <div class="container-fluid">
         <a class="navbar-brand pe-4 text-white" href="{{ route('home') }}">ICON</a>
 
@@ -10,8 +11,8 @@
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-1 ">
                 <li class="nav-item dropdown-center">
 
-                    <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
+                    <a class="nav-link dropdown-toggle text-white" href="#" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
 
                         Koleksi Baru
                     </a>
@@ -22,8 +23,8 @@
                     </ul>
                 </li>
                 <li class="nav-item dropdown-center">
-                    <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
+                    <a class="nav-link dropdown-toggle text-white" href="#" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
                         Produk
                     </a>
                     <ul class="dropdown-menu">
@@ -35,13 +36,13 @@
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" aria-current="page" href="#">Blog</a>
+                    <a class="nav-link text-white" aria-current="page" href="{{ url('blog') }}">Blog</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link fw-semibold" aria-current="page" href="{{ url('about') }}">About</a>
+                    <a class="nav-link text-white" aria-current="page" href="{{ url('about') }}">About</a>
                 </li>
                 <li>
-                    <a class="nav-link fw-semibold" aria-current="page" href="{{ url('contact') }}">Contact</a>
+                    <a class="nav-link text-white" aria-current="page" href="{{ url('contact') }}">Contact</a>
                 </li>
             </ul>
             <div class="d-flex gap-3">
