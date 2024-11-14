@@ -24,6 +24,7 @@
                         Produk
                     </a>
                     <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="product">Kategori</a></li>
                         <li><a class="dropdown-item" href="#">Baju</a></li>
                         <li><a class="dropdown-item" href="#">Hoodie</a></li>
                         <li><a class="dropdown-item" href="#">Topi</a></li>
