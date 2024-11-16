@@ -1,5 +1,5 @@
-<nav class="navbar navbar-expand-lg px-3 py-3 sticky-top"
-    style="box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1); background-color: #1bac25">
+<nav class="navbar navbar-expand-lg px-3 py-3 fixed-top"
+    style="box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1); background-color: #23a548">
     <div class="container-fluid">
         <a class="navbar-brand pe-4 text-white" href="{{ route('home') }}">ICON</a>
 
@@ -7,10 +7,9 @@
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-1 ">
                 <li class="nav-item dropdown-center">
-
                     <a class="nav-link dropdown-toggle text-white" href="#" role="button"
                         data-bs-toggle="dropdown" aria-expanded="false">
 
@@ -28,7 +27,6 @@
                         Produk
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="product">Kategori</a></li>
                         <li><a class="dropdown-item fw-semibold" href="#">Baju</a></li>
                         <li><a class="dropdown-item fw-semibold" href="#">Hoodie</a></li>
                         <li><a class="dropdown-item fw-semibold" href="#">Topi</a></li>
@@ -45,16 +43,51 @@
                     <a class="nav-link text-white" aria-current="page" href="{{ url('contact') }}">Contact</a>
                 </li>
             </ul>
-            <div class="d-flex gap-3">
+            <div class="d-flex align-items-center gap-3">
                 @if (Auth::check())
-                    <a href="" class="text-decoration-none text-white"><box-icon name='star'
+                    <a href="" class="nav-icon text-decoration-none text-white"><box-icon name='star'
                             color='#ffffff'></box-icon></a>
-                    <a href="" class="text-decoration-none text-white"><box-icon name='shopping-bag'
+                    <a href="" class="nav-icon text-decoration-none text-white"><box-icon name='shopping-bag'
                             color='#ffffff'></box-icon></a>
-                    <a href="" class="text-decoration-none text-white"><box-icon name='user'
-                            color='#ffffff'></box-icon></a>
+                    <ul class="navbar-nav w-100">
+                        <li class="nav-item dropdown-center me-3">
+                            <a class="dropdown-toggle text-decoration-none text-white d-flex align-items-center"
+                                type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <div class="d-flex align-items-center">
+                                    <div class="rounded-circle bg-white" style="width: 2.5rem; height: 2.5rem;">
+                                        @if (Auth::user()->image)
+                                            <img src="{{ asset('storage/profil/' . Auth::user()->image) }}" alt=""
+                                                class="img-fluid border border-white rounded-circle"
+                                                style="object-fit: cover; object-position: center; width: 100%; height: 100%;">
+                                        @else
+                                            <img src="{{ asset('storage/images/default/defaultProfil.png') }}" alt=""
+                                                class="img-fluid border border-white rounded-circle bg-white"
+                                                style="object-fit: cover; object-position: center; width: 100%; height: 100%;">
+                                        @endif
+                                    </div>
+                                    <h6 class="m-0 ps-2">{{ auth()->user()->username }}</h6>
+                                </div>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href=""><i class='bx bx-user fw-semibold fs-5'></i>
+                                        Profil</a></li>
+                                <li class="nav-links"><a class="dropdown-item" href=""><i class='bx bx-star fw-semibold fs-5'></i>
+                                        Favorite</a>
+                                </li>
+                                <li class="nav-links"><a class="dropdown-item" href=""><i
+                                            class='bx bx-shopping-bag fw-semibold fs-5'></i> Shopping Bag</a>
+                                </li>
+                                <li class="nav-links">
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="/logout"><i class='bx bx-log-out fw-semibold fs-5'></i>
+                                        Logout</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
                 @else
-                    <a href="" class="text-decoration-none fw-bold text-white">Sign in</a>
+                    <a href="/login" class="text-decoration-none fw-bold text-white">Sign in</a>
                 @endif
             </div>
         </div>
