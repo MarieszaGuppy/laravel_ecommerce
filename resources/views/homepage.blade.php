@@ -6,9 +6,19 @@
             height: 30rem;
         }
 
-        @media(max-width: 900px) {}
+        .m-sizing {
+            margin-left: 6rem;
+            margin-right: 6rem;
+        }
 
-        @media(max-width: 768px) {
+        @media(max-width: 900px) {
+            .m-sizing {
+                margin-left: 3rem;
+                margin-right: 3rem;
+            }
+        }
+
+        @media(max-width: 767.9px) {
             .gap-heros {
                 margin-bottom: 1rem;
             }
@@ -18,13 +28,18 @@
             }
         }
 
-        @media(max-width: 500px) {}
+        @media(max-width: 500px) {
+            .m-sizing {
+                margin-left: 1.8rem;
+                margin-right: 1.8rem;
+            }
+        }
     </style>
 @endsection
 
 @section('container')
-    <div class="container py-5">
-        <div class="row my-3">
+    <div class="m-sizing">
+        <div class="row my-5">
             <div class="col-lg-8 col-md-7">
                 <div class="card gap-heros heros">
                     <img src="{{ asset('storage/images/homepage/heros/NeverRegretClothes.jpeg') }}" class="card-img img-fluid"
@@ -89,7 +104,7 @@
                             style="object-fit: cover; object-position: center; width: 100%; height: 100%;">
                         <div class="position-absolute w-100 h-100 d-flex align-items-center justify-content-center"
                             style="background-color: rgba(0, 0, 0, 0.5);">
-                            <h2 class="text-white text-center fw-bold">Toko <br> <span style="color: #1bac25;">x</span> <br>
+                            <h2 class="text-white text-center fw-bold">Toko <br> <span style="color: #24c32f;">x</span> <br>
                                 Pokemon</h2>
                         </div>
                     </div>
@@ -101,7 +116,7 @@
                             style="object-fit: cover; object-position: center; width: 100%; height: 100%;">
                         <div class="position-absolute w-100 h-100 d-flex align-items-center justify-content-center"
                             style="background-color: rgba(0, 0, 0, 0.5);">
-                            <h2 class="text-white text-center fw-bold">Toko <br> <span style="color: #1bac25;">x</span> <br>
+                            <h2 class="text-white text-center fw-bold">Toko <br> <span style="color: #24c32f;">x</span> <br>
                                 Demon Slayer</h2>
                         </div>
                     </div>
@@ -113,7 +128,7 @@
                             style="object-fit: cover; object-position: center; width: 100%; height: 100%;">
                         <div class="position-absolute w-100 h-100 d-flex align-items-center justify-content-center"
                             style="background-color: rgba(0, 0, 0, 0.5);">
-                            <h2 class="text-white text-center fw-bold">Toko <br> <span style="color: #1bac25;">x</span> <br>
+                            <h2 class="text-white text-center fw-bold">Toko <br> <span style="color: #24c32f;">x</span> <br>
                                 BMTH</h2>
                         </div>
                     </div>
@@ -122,8 +137,8 @@
         </div>
     </div>
 
-    <div class="" style="margin-bottom: 5rem; padding-bottom: 8rem; padding-top: 5rem; background-color: #5dff6830;">
-        <div class="container">
+    <div style="margin-bottom: 5rem; padding-bottom: 5rem; padding-top: 2rem; background-color: #5dff6816;">
+        <div class="m-sizing">
             <div class="text-center text-black py-4">
                 <h1 class="text-center fw-bold m-0"><span style="color: #1bac25;">BEST</span> Product Sellers!</h1>
                 <p class="text-dark"><small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa vel,
@@ -132,54 +147,55 @@
                         adipisci sint inventore. Atque, ipsum.</small></p>
             </div>
             <div class="row row-cols-2 row-cols-md-4 row-cols-lg-4">
+
                 <div class="col">
-                    <div class="card">
-                        <img src="{{ asset('storage/images/homepage/heros/NeverRegretClothes.jpeg') }}" class="card-img-top" alt="...">
+                    <div class="card mb-3">
+                        <img src="{{ asset('storage/images/homepage/heros/NeverRegretClothes.jpeg') }}" class="card-img-top"
+                            alt="..." style="object-position: center; object-fit: cover;">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                                the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <p class="card-title fw-semibold m-0" style="color:#23c92e;">Clothes</p>
+                            <h4 class="card-text pb-3">Nama Produk</h4>
+                            <p class="m-0 fw-bold" style="letter-spacing: 2px;"><small>Rp. 498.000 </small></p>
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="col">
-                    <div class="card">
-                        <img src="{{ asset('storage/images/homepage/heros/NeverRegretClothes.jpeg') }}" class="card-img-top" alt="...">
+                    <div class="card mb-3">
+                        <img src="{{ asset('storage/images/homepage/heros/NeverRegretClothes.jpeg') }}"
+                            class="card-img-top" alt="..." style="object-position: center; object-fit: cover;">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                                the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <p class="card-title fw-semibold m-0" style="color:#23c92e;">Clothes</p>
+                            <h4 class="card-text pb-3">Nama Produk</h4>
+                            <p class="m-0 fw-bold" style="letter-spacing: 2px;"><small>Rp. 498.000 </small></p>
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="col">
-                    <div class="card">
-                        <img src="{{ asset('storage/images/homepage/heros/NeverRegretClothes.jpeg') }}" class="card-img-top" alt="...">
+                    <div class="card mb-3">
+                        <img src="{{ asset('storage/images/homepage/heros/NeverRegretClothes.jpeg') }}"
+                            class="card-img-top" alt="..." style="object-position: center; object-fit: cover;">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                                the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <p class="card-title fw-semibold m-0" style="color:#23c92e;">Clothes</p>
+                            <h4 class="card-text pb-3">Nama Produk</h4>
+                            <p class="m-0 fw-bold" style="letter-spacing: 2px;"><small>Rp. 498.000 </small></p>
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="col">
-                    <div class="card">
-                        <img src="{{ asset('storage/images/homepage/heros/NeverRegretClothes.jpeg') }}" class="card-img-top" alt="...">
+                    <div class="card mb-3">
+                        <img src="{{ asset('storage/images/homepage/heros/NeverRegretClothes.jpeg') }}"
+                            class="card-img-top" alt="..." style="object-position: center; object-fit: cover;">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                                the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <p class="card-title fw-semibold m-0" style="color:#23c92e;">Clothes</p>
+                            <h4 class="card-text pb-3">Nama Produk</h4>
+                            <p class="m-0 fw-bold" style="letter-spacing: 2px;"><small>Rp. 498.000 </small></p>
                         </div>
                     </div>
                 </div>
-                
+
             </div>
         </div>
 

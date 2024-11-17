@@ -11,5 +11,25 @@ class mainPageController extends Controller
     {
         return view('homepage');
     }
+    
+    public function about()
+    {
+        return view('about');
+    }
+
+    public function product()
+    {
+        return view('store');
+    }
+
+    public function contact()
+    {
+        return view('contact');
+    }
+
+    public function blog()
+    {
+        return view('blog');
+    }
 
 }
