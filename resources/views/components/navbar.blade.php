@@ -56,11 +56,12 @@
                                 <div class="d-flex align-items-center">
                                     <div class="rounded-circle bg-white" style="width: 2.5rem; height: 2.5rem;">
                                         @if (Auth::user()->image)
-                                            <img src="{{ asset('storage/profil/' . Auth::user()->image) }}" alt=""
-                                                class="img-fluid border border-white rounded-circle"
+                                            <img src="{{ asset('assets/profil/' . Auth::user()->image) }}"
+                                                alt="" class="img-fluid border border-white rounded-circle"
                                                 style="object-fit: cover; object-position: center; width: 100%; height: 100%;">
                                         @else
-                                            <img src="{{ asset('storage/images/default/defaultProfil.png') }}" alt=""
+                                            <img src="{{ asset('assets/homes/default/defaultProfil.png') }}"
+                                                alt=""
                                                 class="img-fluid border border-white rounded-circle bg-white"
                                                 style="object-fit: cover; object-position: center; width: 100%; height: 100%;">
                                         @endif
@@ -71,7 +72,8 @@
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href=""><i class='bx bx-user fw-semibold fs-5'></i>
                                         Profil</a></li>
-                                <li class="nav-links"><a class="dropdown-item" href=""><i class='bx bx-star fw-semibold fs-5'></i>
+                                <li class="nav-links"><a class="dropdown-item" href=""><i
+                                            class='bx bx-star fw-semibold fs-5'></i>
                                         Favorite</a>
                                 </li>
                                 <li class="nav-links"><a class="dropdown-item" href=""><i
@@ -80,7 +82,8 @@
                                 <li class="nav-links">
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="/logout"><i class='bx bx-log-out fw-semibold fs-5'></i>
+                                <li><a class="dropdown-item" href="/logout"><i
+                                            class='bx bx-log-out fw-semibold fs-5'></i>
                                         Logout</a>
                                 </li>
                             </ul>
