@@ -7,7 +7,7 @@
         <div class="content " style="margin-top: 70px; margin-bottom: 70px; ">
             <div class="row flex-row-reverse featurette py-3">
                 <div class="col-md-5 mb-3">
-                    <img src="{{ asset('assets/gedung.webp') }}" width="100%" height="100%" alt="Foto Perusahaan"
+                    <img src="{{ asset('assets/abouts/gedung.webp') }}" width="100%" height="100%" alt="Foto Perusahaan"
                         class="rounded" style="object-fit: cover; object-position: center;">
                 </div>
 
@@ -24,7 +24,7 @@
 
             <div class="row featurette py-3" style="margin-top: 100px; margin-bottom: 100px;">
                 <div class="col-md-5 mb-3">
-                    <img src="{{ asset('assets/tim.jpg') }}" width="100%" height="100%" alt="Foto Team mungkin"
+                    <img src="{{ asset('assets/abouts/tim.jpg') }}" width="100%" height="100%" alt="Foto Team mungkin"
                         class="rounded" style="object-fit: cover; object-position: center;">
                 </div>
 
