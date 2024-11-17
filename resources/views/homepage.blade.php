@@ -42,7 +42,7 @@
         <div class="row my-5">
             <div class="col-lg-8 col-md-7">
                 <div class="card gap-heros heros">
-                    <img src="{{ asset('storage/images/homepage/heros/NeverRegretClothes.jpeg') }}" class="card-img img-fluid"
+                    <img src="{{ asset('assets/homes/homepage/heros/NeverRegretClothes.jpeg') }}" class="card-img img-fluid"
                         alt="banner" style="object-fit: cover; object-position: center; width: 100%; height: 100%;">
                     <div class="card-img-overlay d-flex align-items-center text-white"
                         style="background-color: rgba(0, 0, 0, 0.45)">
@@ -60,7 +60,7 @@
             <div class="col-lg-4 col-md-5">
                 <div class="d-flex h-100 flex-column justify-content-between gap-3">
                     <div class="card" style="height: 14rem;">
-                        <img src="{{ asset('storage/images/homepage/heros/smiley-man-posing-outdoors-front-gate.jpg') }}"
+                        <img src="{{ asset('assets/homes/homepage/heros/smiley-man-posing-outdoors-front-gate.jpg') }}"
                             alt="" class="img-fluid"
                             style="object-fit: cover; object-position: center; width: 100%; height: 100%;">
                         <div class="position-absolute w-100 h-100 d-flex align-items-end"
@@ -74,7 +74,7 @@
                     </div>
 
                     <div class="card" style="height: 14rem;">
-                        <img src="{{ asset('storage/images/homepage/heros/Black.png') }}" alt="" class="img-fluid"
+                        <img src="{{ asset('assets/homes/homepage/heros/Black.png') }}" alt="" class="img-fluid"
                             style="object-fit: cover; object-position: center; width: 100%; height: 100%;">
                         <div class="position-absolute w-100 h-100 d-flex align-items-end"
                             style="background-color: rgba(0, 0, 0, 0.5);">
@@ -99,7 +99,7 @@
             <div class="row row-cols-1 row-cols-lg-3 row-cols-md-3">
                 <div class="col mb-4">
                     <div class="card">
-                        <img src="{{ asset('storage/images/homepage/collections/Pokemon.jpeg') }}" alt=""
+                        <img src="{{ asset('assets/homes/homepage/collections/Pokemon.jpeg') }}" alt=""
                             class="img-fluid"
                             style="object-fit: cover; object-position: center; width: 100%; height: 100%;">
                         <div class="position-absolute w-100 h-100 d-flex align-items-center justify-content-center"
@@ -111,7 +111,7 @@
                 </div>
                 <div class="col mb-4">
                     <div class="card">
-                        <img src="{{ asset('storage/images/homepage/collections/demonSlayerjpeg.jpeg') }}" alt=""
+                        <img src="{{ asset('assets/homes/homepage/collections/demonSlayerjpeg.jpeg') }}" alt=""
                             class="img-fluid"
                             style="object-fit: cover; object-position: center; width: 100%; height: 100%;">
                         <div class="position-absolute w-100 h-100 d-flex align-items-center justify-content-center"
@@ -123,7 +123,7 @@
                 </div>
                 <div class="col mb-4">
                     <div class="card">
-                        <img src="{{ asset('storage/images/homepage/collections/BMTH.jpeg') }}" alt=""
+                        <img src="{{ asset('assets/homes/homepage/collections/BMTH.jpeg') }}" alt=""
                             class="img-fluid"
                             style="object-fit: cover; object-position: center; width: 100%; height: 100%;">
                         <div class="position-absolute w-100 h-100 d-flex align-items-center justify-content-center"
@@ -150,7 +150,7 @@
 
                 <div class="col">
                     <div class="card mb-3">
-                        <img src="{{ asset('storage/images/homepage/heros/NeverRegretClothes.jpeg') }}" class="card-img-top"
+                        <img src="{{ asset('assets/homes/homepage/heros/NeverRegretClothes.jpeg') }}" class="card-img-top"
                             alt="..." style="object-position: center; object-fit: cover;">
                         <div class="card-body">
                             <p class="card-title fw-semibold m-0" style="color:#23c92e;">Clothes</p>
@@ -162,8 +162,8 @@
 
                 <div class="col">
                     <div class="card mb-3">
-                        <img src="{{ asset('storage/images/homepage/heros/NeverRegretClothes.jpeg') }}"
-                            class="card-img-top" alt="..." style="object-position: center; object-fit: cover;">
+                        <img src="{{ asset('assets/homes/homepage/heros/NeverRegretClothes.jpeg') }}" class="card-img-top"
+                            alt="..." style="object-position: center; object-fit: cover;">
                         <div class="card-body">
                             <p class="card-title fw-semibold m-0" style="color:#23c92e;">Clothes</p>
                             <h4 class="card-text pb-3">Nama Produk</h4>
@@ -174,8 +174,8 @@
 
                 <div class="col">
                     <div class="card mb-3">
-                        <img src="{{ asset('storage/images/homepage/heros/NeverRegretClothes.jpeg') }}"
-                            class="card-img-top" alt="..." style="object-position: center; object-fit: cover;">
+                        <img src="{{ asset('assets/homes/homepage/heros/NeverRegretClothes.jpeg') }}" class="card-img-top"
+                            alt="..." style="object-position: center; object-fit: cover;">
                         <div class="card-body">
                             <p class="card-title fw-semibold m-0" style="color:#23c92e;">Clothes</p>
                             <h4 class="card-text pb-3">Nama Produk</h4>
@@ -186,8 +186,8 @@
 
                 <div class="col">
                     <div class="card mb-3">
-                        <img src="{{ asset('storage/images/homepage/heros/NeverRegretClothes.jpeg') }}"
-                            class="card-img-top" alt="..." style="object-position: center; object-fit: cover;">
+                        <img src="{{ asset('assets/homes/homepage/heros/NeverRegretClothes.jpeg') }}" class="card-img-top"
+                            alt="..." style="object-position: center; object-fit: cover;">
                         <div class="card-body">
                             <p class="card-title fw-semibold m-0" style="color:#23c92e;">Clothes</p>
                             <h4 class="card-text pb-3">Nama Produk</h4>

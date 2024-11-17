@@ -9,7 +9,7 @@
     <title>Bootstrap demo</title>
 </head>
 
-<body style="background-image: url('{{ asset('storage/images/Auth/image1.jpeg') }}');">
+<body style="background-image: url('{{ asset('assets/homes/Auth/image1.jpeg') }}');">
 
 
     <section class="vh-100" style="backdrop-filter: blur(4px); background-color: rgba(0, 0, 0, 0.2)">
@@ -19,7 +19,7 @@
                     <div class="card border-0" style="border-radius: 1rem;">
                         <div class="row g-0">
                             <div class="col-md-6 col-lg-5 d-none d-md-block">
-                                <img src="{{ asset('storage/images/Auth/image1.jpeg') }}" alt="login form"
+                                <img src="{{ asset('assets/homes/Auth/image1.jpeg') }}" alt="login form"
                                     class="img-fluid"
                                     style="object-fit: cover; object-position: center; width: 100%; height: 100%;">
                             </div>

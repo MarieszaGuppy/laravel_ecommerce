@@ -20,7 +20,7 @@
                             xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Thumbnail"
                             preserveAspectRatio="xMidYMid slice" focusable="false">
                             <title>Thumbnail</title>
-                            <image href="{{ asset('assets/blog.jpeg') }}" width="100%" height="100%"
+                            <image href="{{ asset('assets/blogs/blog.jpeg') }}" width="100%" height="100%"
                                 preserveAspectRatio="xMidYMid slice" />
                         </svg>
                     </div>
