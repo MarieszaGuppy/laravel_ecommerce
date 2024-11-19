@@ -23,5 +23,7 @@ class DatabaseSeeder extends Seeder
             'username' => 'NaufalTA',
             'password' => Hash::make('rahasia'),
         ]);
+
+        $this->call(ArticleSeeder::class);
     }
 }
