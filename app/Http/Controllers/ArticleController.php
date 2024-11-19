@@ -15,6 +15,10 @@ class ArticleController extends Controller
     {
         $articles = Article::query();
 
+        if (request('category') !== null) {
+            $articles->where('category', request('category'));
+        }
+
         // Filter berdasarkan pencarian judul
         if (request('search')) {
             $articles->where('title', 'like', '%' . request('search') . '%');

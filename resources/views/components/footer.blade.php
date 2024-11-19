@@ -15,12 +15,13 @@
                 <ul class="nav flex-column">
                     <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">FAQ</a></li>
                     <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Pembayaran</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Kebijakan Privasi</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Kebijakan Privasi</a>
+                    </li>
                 </ul>
             </div>
 
             <div class="col-6 col-md-2 mb-5">
-                <h4 class="text-white">Costumer</h4>
+                <h4 class="text-white">Customer</h4>
                 <ul class="nav flex-column">
                     <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Lacak Pesanan</a></li>
                 </ul>
@@ -40,15 +41,15 @@
 
             <div class="col-md-4 mb-3">
                 <form>
-                <div class="py-4">
-                    <h1 class="fw-bold text-white m-0">ICONLOGO</h1>
-                    <div class="d-flex align-items-center text-white gap-1">
-                        <a href="text-decoration-none"><i class='bx bxl-twitter fs-5 text-white' ></i></a>
-                        <a href="text-decoration-none"><i class='bx bxl-facebook fs-5 text-white' ></i></a>
-                        <a href="text-decoration-none"><i class='bx bxl-instagram fs-5 text-white' ></i></a>
-                        <a href="text-decoration-none"><i class='bx bxl-whatsapp fs-5 text-white'></i></a>
+                    <div class="py-4">
+                        <h1 class="fw-bold text-white m-0">ICONLOGO</h1>
+                        <div class="d-flex align-items-center text-white gap-1">
+                            <a href="text-decoration-none"><i class='bx bxl-twitter fs-5 text-white'></i></a>
+                            <a href="text-decoration-none"><i class='bx bxl-facebook fs-5 text-white'></i></a>
+                            <a href="text-decoration-none"><i class='bx bxl-instagram fs-5 text-white'></i></a>
+                            <a href="text-decoration-none"><i class='bx bxl-whatsapp fs-5 text-white'></i></a>
+                        </div>
                     </div>
-                </div>
                     <h5 class="text-white">Subscribe to our newsletter</h5>
                     <div class="d-flex flex-column flex-sm-row w-100 gap-2">
                         <label for="newsletter1" class="visually-hidden">Email address</label>
