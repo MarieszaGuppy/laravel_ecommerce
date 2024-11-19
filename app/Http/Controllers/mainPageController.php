@@ -17,10 +17,32 @@ class mainPageController extends Controller
         return view('about');
     }
 
+// product start
     public function product()
     {
-        return view('store');
+        return view('product.store');
     }
+
+    public function baju()
+    {
+        return view('product.baju');
+    }
+
+    public function sepatu()
+    {
+        return view('product.sepatu');
+    }
+
+    public function hoodie()
+    {
+        return view('product.hoodie');
+    }
+
+    public function topi()
+    {
+        return view('product.topi');
+    }
+// product end
 
     public function contact()
     {

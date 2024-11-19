@@ -10,9 +10,15 @@ use Illuminate\Support\Facades\Route;
 // ROUTE MAIN PAGE
 Route::get('/', [mainPageController::class, 'homepage'])->name('home');
 Route::get('/about', [mainPageController::class, 'about'])->name('about');
-Route::get('/product', [mainPageController::class, 'product'])->name('product');
 Route::get('/contact', [mainPageController::class, 'contact'])->name('contact');
 Route::get('/blog', [mainPageController::class, 'blog'])->name('blog');
+
+// PRODUCT START
+Route::get('/product', [mainPageController::class, 'product'])->name('product');
+Route::get('/baju', [mainPageController::class, 'baju'])->name('baju');
+Route::get('/hoodie', [mainPageController::class, 'hoodie'])->name('hoodie');
+Route::get('/sepatu', [mainPageController::class, 'sepatu'])->name('sepatu');
+Route::get('/topi', [mainPageController::class, 'topi'])->name('topi');
 
 // ROUTE LOGIN
 Route::get('/login', [loginController::class, 'index'])->name('login');
