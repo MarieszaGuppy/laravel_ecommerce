@@ -60,6 +60,28 @@
             background-color: #333;
             color: #fff;
         }
+
+        .rounded-pagination .page-link {
+            color: #444;
+            background: #f8f9fa;
+            border: none;
+            border-radius: 50px;
+            padding: 8px 16px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .rounded-pagination .page-link:hover {
+            background: #6c63ff;
+            color: #fff;
+            box-shadow: 0 4px 8px rgba(108, 99, 255, 0.3);
+        }
+
+        .rounded-pagination .page-item.active .page-link {
+            background: #ff6584;
+            color: #fff;
+            box-shadow: 0 4px 8px rgba(255, 101, 132, 0.4);
+        }
     </style>
 @endsection
 <div class="hero-image-container mb-5">
@@ -79,30 +101,49 @@
                 <nav class="category-nav">
                     <ul class="list-unstyled d-flex flex-wrap justify-content-center gap-3">
                         <li>
-                            <a href=""
-                                class="btn btn-outline-dark {{ request('category') == 'all' ? 'active' : '' }}">All</a>
+                            <a href="{{ request()->fullUrlWithQuery(['category' => '', 'page' => request('1')]) }}"
+                                class="btn btn-outline-dark {{ request('category') == '' ? 'active' : '' }}">All</a>
                         </li>
                         <li>
-                            <a href=""
-                                class="btn btn-outline-dark {{ request('category') == 'hiking' ? 'active' : '' }}">New
+                            <a href="{{ request()->fullUrlWithQuery(['category' => 'New Product', 'page' => request('1')]) }}"
+                                class="btn btn-outline-dark {{ request('category') == 'New Product' ? 'active' : '' }}">New
                                 Product</a>
                         </li>
                         <li>
-                            <a href=""
-                                class="btn btn-outline-dark {{ request('category') == 'camping' ? 'active' : '' }}">Fashion</a>
+                            <a href="{{ request()->fullUrlWithQuery(['category' => 'Fashion', 'page' => request('1')]) }}"
+                                class="btn btn-outline-dark {{ request('category') == 'Fashion' ? 'active' : '' }}">Fashion</a>
                         </li>
                         <li>
-                            <a href=""
-                                class="btn btn-outline-dark {{ request('category') == 'travel' ? 'active' : '' }}">Trend</a>
+                            <a href="{{ request()->fullUrlWithQuery(['category' => 'Trend', 'page' => request('1')]) }}"
+                                class="btn btn-outline-dark {{ request('category') == 'Trend' ? 'active' : '' }}">Trend</a>
                         </li>
                         <li>
-                            <a href=""
-                                class="btn btn-outline-dark {{ request('category') == 'adventure' ? 'active' : '' }}">Mix
+                            <a href="{{ request()->fullUrlWithQuery(['category' => 'Mix & Match', 'page' => request('1')]) }}"
+                                class="btn btn-outline-dark {{ request('category') == 'Mix & Match' ? 'active' : '' }}">Mix
                                 & Match</a>
                         </li>
                     </ul>
                 </nav>
             </div>
+            {{-- <div class="container mt-5">
+                <nav aria-label="Gradient Pagination">
+                    <ul class="pagination justify-content-center rounded-pagination">
+                        <li class="page-item disabled">
+                            <a class="page-link" href="{{ $articles->previousPageUrl() }}" tabindex="-1"
+                                aria-disabled="true">Previous</a>
+                        </li>
+                        @for ($i = 1; $i <= $articles->lastPage(); $i++)
+                            <li class="page-item {{ $articles->currentPage() == $i ? 'active' : '' }}">
+                                <a class="page-link" href="{{ $articles->url($i) }}">{{ $i }}</a>
+                            </li>
+                        @endfor
+                        <li class="page-item">
+                            <a class="page-link" href="{{ $articles->nextPageUrl() }}">Next</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div> --}}
+
         </div>
     </div>
     @section('container')
