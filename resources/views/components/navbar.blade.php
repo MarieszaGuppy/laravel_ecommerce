@@ -27,10 +27,11 @@
                         Produk
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item fw-semibold" href="#">Baju</a></li>
-                        <li><a class="dropdown-item fw-semibold" href="#">Hoodie</a></li>
-                        <li><a class="dropdown-item fw-semibold" href="#">Topi</a></li>
-                        <li><a class="dropdown-item fw-semibold" href="#">Sepatu</a></li>
+                        <li><a class="dropdown-item fw-semibold" href="{{ url('product') }}">Kategori</a></li>
+                        <li><a class="dropdown-item fw-semibold" href="{{ url('baju') }}">Baju</a></li>
+                        <li><a class="dropdown-item fw-semibold" href="{{ url('hoodie') }}">Hoodie</a></li>
+                        <li><a class="dropdown-item fw-semibold" href="{{ url('topi') }}">Topi</a></li>
+                        <li><a class="dropdown-item fw-semibold" href="{{ url('sepatu') }}">Sepatu</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">
