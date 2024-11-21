@@ -5,7 +5,9 @@ use App\Http\Controllers\Authentikasi\registerController;
 use App\Http\Controllers\mainPageController;
 use Illuminate\Support\Facades\Route;
 
-
+Route::get('/check', function () {
+    return view('checkout');
+});
 
 // ROUTE MAIN PAGE
 Route::get('/', [mainPageController::class, 'homepage'])->name('home');
