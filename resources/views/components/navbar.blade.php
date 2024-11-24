@@ -27,11 +27,10 @@
                         Produk
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item fw-semibold" href="{{ url('product') }}">Kategori</a></li>
-                        <li><a class="dropdown-item fw-semibold" href="{{ url('baju') }}">Baju</a></li>
-                        <li><a class="dropdown-item fw-semibold" href="{{ url('hoodie') }}">Hoodie</a></li>
-                        <li><a class="dropdown-item fw-semibold" href="{{ url('topi') }}">Topi</a></li>
-                        <li><a class="dropdown-item fw-semibold" href="{{ url('sepatu') }}">Sepatu</a></li>
+                        <li><a class="dropdown-item fw-semibold" href="/product/baju">Baju</a></li>
+                        <li><a class="dropdown-item fw-semibold" href="/product/hoodie">Hoodie</a></li>
+                        <li><a class="dropdown-item fw-semibold" href="/product/topi">Topi</a></li>
+                        <li><a class="dropdown-item fw-semibold" href="/product/sepatu">Sepatu</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">
@@ -46,9 +45,9 @@
             </ul>
             <div class="d-flex align-items-center gap-3">
                 @if (Auth::check())
-                    <a href="" class="nav-icon text-decoration-none text-white"><box-icon name='star'
+                    <a href="/favorite" class="nav-icon text-decoration-none text-white"><box-icon name='star'
                             color='#ffffff'></box-icon></a>
-                    <a href="" class="nav-icon text-decoration-none text-white"><box-icon name='shopping-bag'
+                    <a href="/check" class="nav-icon text-decoration-none text-white"><box-icon name='shopping-bag'
                             color='#ffffff'></box-icon></a>
                     <ul class="navbar-nav w-100">
                         <li class="nav-item dropdown-center me-3">
