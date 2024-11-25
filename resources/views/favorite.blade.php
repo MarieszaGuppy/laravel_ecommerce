@@ -11,7 +11,7 @@
             @foreach ($products as $product)
                 <div class="col">
                     <div class="card mb-3">
-                        <img src="{{ asset('assets/produk/baju/' . $product->image) }}" class="card-img-top" alt="..."
+                        <img src="{{ asset('assets/produk/' . $product->image) }}" class="card-img-top" alt="..."
                             style="object-position: center; object-fit: cover; height: 22rem;">
                         <div class="card-body">
                             <p class="card-title fw-semibold m-0" style="color:#23c92e;">{{ $product->kategori }}</p>

@@ -43,4 +43,16 @@ class produkController extends Controller
 
         return view('product.topi', compact('products'));
     }
+
+    public function detail(Product $product)
+    {
+
+        $baju = Product::where('kategori', 'baju')->where('id', '!=', $product->id)->inRandomOrder()->limit(4)->get();
+        $sepatu = Product::where('kategori', 'sepatu')->where('id', '!=', $product->id)->inRandomOrder()->limit(4)->get();
+        $hoodie = Product::where('kategori', 'hoodie')->where('id', '!=', $product->id)->inRandomOrder()->limit(4)->get();
+        $topi = Product::where('kategori', 'topi')->where('id', '!=', $product->id)->inRandomOrder()->limit(4)->get();
+
+
+        return view('product.detailProduct', compact('product', 'baju', 'sepatu', 'hoodie', 'topi'));
+    }
 }
