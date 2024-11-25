@@ -15,35 +15,35 @@
             transition: .2s;
         }
         .article-heros:hover{
-            box-shadow: 5px 5px 20px black;
+            box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
         }
 
         .contact-heros{
             transition: .2s;
         }
         .contact-heros:hover{
-            box-shadow: 5px 5px 20px black;
+            box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
         }
 
         .pokemon{
             transition: .2s;
         }
         .pokemon:hover{
-            box-shadow: 5px 5px 20px black;
+            box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
         }
 
         .kimetsu{
             transition: .2s;
         }
         .kimetsu:hover{
-            box-shadow: 5px 5px 20px black;
+            box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
         }
 
         .bmth{
             transition: .2s;
         }
         .bmth:hover{
-            box-shadow: 5px 5px 20px black;
+            box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
         }
 
         
@@ -197,9 +197,9 @@
 
                 @foreach ($hoodie as $product)
                     <div class="col">
-                        <a href="" class="text-decoration-none">
+                        <a href="/product/{{ $product->slug }}" class="text-decoration-none">
                             <div class="card mb-3">
-                                <img src="{{ asset('assets/produk/hoodie/' . $product->image) }}" class="card-img-top"
+                                <img src="{{ asset('assets/produk/' . $product->image) }}" class="card-img-top"
                                     alt="..." style="object-position: center; object-fit: cover; height: 20rem;">
                                 <div class="card-body">
                                     <p class="card-title fw-semibold m-0" style="color:#23c92e;">{{ $product->kategori }}</p>
@@ -219,9 +219,9 @@
 
                 @foreach ($baju as $product)
                     <div class="col">
-                        <a href="" class="text-decoration-none">
+                        <a href="/product/{{ $product->slug }}" class="text-decoration-none">
                             <div class="card mb-3">
-                                <img src="{{ asset('assets/produk/baju/' . $product->image) }}" class="card-img-top"
+                                <img src="{{ asset('assets/produk/' . $product->image) }}" class="card-img-top"
                                     alt="..." style="object-position: center; object-fit: cover; height: 20rem;">
                                 <div class="card-body">
                                     <p class="card-title fw-semibold m-0" style="color:#23c92e;">{{ $product->kategori }}</p>

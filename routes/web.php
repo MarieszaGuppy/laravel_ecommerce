@@ -26,10 +26,11 @@ Route::get('/product/baju', [produkController::class, 'baju'])->name('baju');
 Route::get('/product/hoodie', [produkController::class, 'hoodie'])->name('hoodie');
 Route::get('/product/sepatu', [produkController::class, 'sepatu'])->name('sepatu');
 Route::get('/product/topi', [produkController::class, 'topi'])->name('topi');
+Route::get('/product/{product:slug}', [produkController::class, 'detail'])->name('detail');
 
 // ROUTE ARTICLE
 Route::get('/blog', [ArticleController::class, 'index'])->name('blog');
-Route::get('/blog/{article:slug}', [ArticleController::class, 'view']);
+Route::get('/blog/{article:slug}', [ArticleController::class, 'show']);
 
 // ROUTE LOGIN
 Route::get('/login', [loginController::class, 'index'])->name('login');

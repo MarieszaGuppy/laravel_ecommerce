@@ -14,7 +14,7 @@
         }
 
         .hero-image-container {
-            margin-top: 5%;
+            margin-top: 4.5rem;
             position: relative;
         }
 
@@ -84,6 +84,7 @@
         }
     </style>
 @endsection
+
 <div class="hero-image-container mb-5">
     <div class="hero-image text-white">
         <div class="overlay d-flex flex-column justify-content-center align-items-center text-center">
@@ -160,7 +161,7 @@
                                 <p class="card-text">
                                     {{ Str::limit($article->body, 100, '...') }}
                                 </p>
-                                <a href="" style="text-decoration: none; color:black"
+                                <a href="/blog/{{ $article->slug }}" style="text-decoration: none; color:black"
                                     class="icon-link gap-1 icon-link-hover stretched-link">Continue reading...<box-icon
                                         name='chevron-right'></box-icon></a>
                             </div>

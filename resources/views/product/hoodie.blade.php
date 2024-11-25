@@ -53,22 +53,24 @@
 
                     @foreach ($products as $product)
                         <div class="col">
-                            <div class="card mb-3">
-                                <img src="{{ asset('assets/produk/hoodie/' . $product->image) }}" class="card-img-top"
-                                    alt="..." style="object-position: center; object-fit: cover; height: 20rem;">
-                                <div class="card-body">
-                                    <p class="card-title fw-semibold m-0" style="color:#23c92e;">{{ $product->kategori }}
-                                    </p>
-                                    <h5 class="card-text pt-1 pb-3">{{ $product->merek }}</h5>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <p class="m-0 fw-bold" style="letter-spacing: 2px;"><small>{{ $product->harga }}
-                                            </small></p>
-                                        <div class="rounded-circle" style="background-color:#23c92e ">
-                                            <i class='bx bx-cart-alt text-white fs-5 p-2' ></i>
+                            <a href="/product/{{ $product->slug }}" class="text-decoration-none">
+                                <div class="card mb-3">
+                                    <img src="{{ asset('assets/produk/' . $product->image) }}" class="card-img-top"
+                                        alt="..." style="object-position: center; object-fit: cover; height: 20rem;">
+                                    <div class="card-body">
+                                        <p class="card-title fw-semibold m-0" style="color:#23c92e;">{{ $product->kategori }}
+                                        </p>
+                                        <h5 class="card-text pt-1 pb-3">{{ $product->merek }}</h5>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <p class="m-0 fw-bold" style="letter-spacing: 2px;"><small>{{ $product->harga }}
+                                                </small></p>
+                                            <div class="rounded-circle" style="background-color:#23c92e ">
+                                                <i class='bx bx-cart-alt text-white fs-5 p-2' ></i>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                     @endforeach
 

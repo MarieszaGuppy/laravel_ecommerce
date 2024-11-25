@@ -9,7 +9,7 @@
             <hr>
             <div class="d-flex justify-content-between align-items-center mb-3">
                 <div class="d-flex align-items-center">
-                    <img src="{{ asset('assets/produk/baju/baju1.jpeg') }}" alt="Product" width="100" class="me-3">
+                    <img src="{{ asset('assets/produk/baju1.jpeg') }}" alt="Product" width="100" class="me-3">
                     <div>
                         <h6 class="m-0">Tako Clothes</h6>
                         <small>XL Size</small>

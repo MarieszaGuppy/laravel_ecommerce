@@ -25,7 +25,7 @@ class ArticleController extends Controller
         }
 
         $articleCount = Article::count();
-        return view('blog', compact('articleCount'), ['articles' => $articles->latest()->paginate(5)]);
+        return view('blog.blog', compact('articleCount'), ['articles' => $articles->latest()->paginate(5)]);
     }
 
     public function create(): View
@@ -70,6 +70,6 @@ class ArticleController extends Controller
      */
     public function show(Article $article)
     {
-        return view('blog', compact('article'));
+        return view('blog.showBlog', compact('article'));
     }
 }
