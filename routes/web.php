@@ -1,19 +1,20 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\produkController;
 use App\Http\Controllers\ArticleController;
-use App\Http\Controllers\Authentikasi\loginController;
-use App\Http\Controllers\Authentikasi\registerController;
+use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\favoriteController;
 use App\Http\Controllers\mainPageController;
-use App\Http\Controllers\produkController;
-use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Authentikasi\loginController;
+use App\Http\Controllers\Authentikasi\registerController;
 
-Route::get('/check', function () {
+Route::get('/checkout', function () {
     return view('checkout');
-});
+})->name('checkout');
 
 // ROUTE WHISLIST / FAVORITE
-Route::get('/favorite', [favoriteController::class, 'index']);
+Route::get('/favorite', [favoriteController::class, 'index'])->name('favorite');
 
 // ROUTE MAIN PAGE
 Route::get('/', [mainPageController::class, 'homepage'])->name('home');
@@ -43,3 +44,10 @@ Route::get('/logout', [loginController::class, 'logout']);
 // ROUTE REGISTER
 Route::get('/register', [registerController::class, 'index'])->name('login');
 Route::post('/register', [registerController::class, 'store']);
+
+// ROUTE PROFILE
+Route::middleware('auth')->group(function () {
+    Route::get('/profile', [ProfileController::class, 'index'])->name('profile');
+    Route::get('/profile/edit', [ProfileController::class, 'edit'])->name('profile.edit');
+    Route::put('/profile/update/{id}', [ProfileController::class, 'update'])->name('profile.update');
+});

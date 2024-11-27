@@ -27,8 +27,9 @@
 
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item" href="#">Add To Cart</a></li>
-                                        <li><a class="dropdown-item" href="#">Checkout</a></li>
-                                        <li><a class="dropdown-item text-danger" href="#">Delete From Favorite</a></li>
+                                        <li><a class="dropdown-item" href="{{ route('checkout') }}">Checkout</a></li>
+                                        <li><a class="dropdown-item text-danger" href="#">Delete From Favorite</a>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
