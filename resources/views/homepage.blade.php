@@ -11,42 +11,47 @@
             margin-right: 6rem;
         }
 
-        .article-heros{
+        .article-heros {
             transition: .2s;
         }
-        .article-heros:hover{
+
+        .article-heros:hover {
             box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
         }
 
-        .contact-heros{
+        .contact-heros {
             transition: .2s;
         }
-        .contact-heros:hover{
+
+        .contact-heros:hover {
             box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
         }
 
-        .pokemon{
+        .pokemon {
             transition: .2s;
         }
-        .pokemon:hover{
+
+        .pokemon:hover {
             box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
         }
 
-        .kimetsu{
+        .kimetsu {
             transition: .2s;
         }
-        .kimetsu:hover{
+
+        .kimetsu:hover {
             box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
         }
 
-        .bmth{
+        .bmth {
             transition: .2s;
         }
-        .bmth:hover{
+
+        .bmth:hover {
             box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
         }
 
-        
+
 
         @media(max-width: 900px) {
             .m-sizing {
@@ -86,9 +91,8 @@
                         <div class="p-3">
                             <h1 class="m-0 fw-bold">With Great Design <br> <span style="color: #53ff5f">Make You
                                     Perfect!</span></h1>
-                            <p class="card-text m-0 py-4"><small>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Non molestiae ex cumque repellat sint exercitationem dicta ratione aut omnis
-                                    veritatis.</small></p>
+                            <p class="card-text m-0 py-4"><small>Browse our exclusive collection and upgrade your style
+                                    today. Shop Now to get your hands on the latest trends!</small></p>
                             <a href="{{ url('product') }}" class="btn btn-outline-light px-4 py-2 fw-bold">Shop now!</a>
                         </div>
                     </div>
@@ -105,8 +109,7 @@
                                 style="background-color: rgba(0, 0, 0, 0.5);">
                                 <div class="p-4">
                                     <h3 class="fw-bold m-0" style="color: #70ff7a;">Articles</h3>
-                                    <p class="text-white"><small>Lorem ipsum dolor sit, amet consectetur adipisicing
-                                            elit.</small></p>
+                                    <p class="text-white"><small>Discover fashion that never goes out of style.</small></p>
                                 </div>
                             </div>
                         </div>
@@ -120,8 +123,8 @@
                                 style="background-color: rgba(0, 0, 0, 0.5);">
                                 <div class="p-4">
                                     <h3 class="fw-bold m-0" style="color: #70ff7a;">Location</h3>
-                                    <p class="text-white"><small>Lorem ipsum dolor sit, amet consectetur adipisicing
-                                            elit.</small></p>
+                                    <p class="text-white"><small>Jl. Jend. Ahmad Yani No.98, Nagri Tengah, Kec. Purwakarta,
+                                            Kabupaten Purwakarta, Jawa Barat 41114</small></p>
                                 </div>
                             </div>
                         </div>
@@ -146,8 +149,10 @@
                                 style="object-fit: cover; object-position: center; width: 100%; height: 100%;">
                             <div class="position-absolute w-100 h-100 d-flex align-items-center justify-content-center pokemon"
                                 style="background-color: rgba(0, 0, 0, 0.5);">
-                                <h2 class="text-white text-center fw-bold">Toko <br> <span style="color: #24c32f;">x</span> <br>
-                                    Pokemon</h2>
+                                <h2 class="text-white text-center fw-bold">Toko <br> <span style="color: #24c32f;">x</span>
+                                    <br>
+                                    Pokemon
+                                </h2>
                             </div>
                         </div>
                     </a>
@@ -160,8 +165,10 @@
                                 style="object-fit: cover; object-position: center; width: 100%; height: 100%;">
                             <div class="position-absolute w-100 h-100 d-flex align-items-center justify-content-center kimetsu"
                                 style="background-color: rgba(0, 0, 0, 0.5);">
-                                <h2 class="text-white text-center fw-bold">Toko <br> <span style="color: #24c32f;">x</span> <br>
-                                    Demon Slayer</h2>
+                                <h2 class="text-white text-center fw-bold">Toko <br> <span style="color: #24c32f;">x</span>
+                                    <br>
+                                    Demon Slayer
+                                </h2>
                             </div>
                         </div>
                     </a>
@@ -174,8 +181,10 @@
                                 style="object-fit: cover; object-position: center; width: 100%; height: 100%;">
                             <div class="position-absolute w-100 h-100 d-flex align-items-center justify-content-center bmth"
                                 style="background-color: rgba(0, 0, 0, 0.5);">
-                                <h2 class="text-white text-center fw-bold">Toko <br> <span style="color: #24c32f;">x</span> <br>
-                                    BMTH</h2>
+                                <h2 class="text-white text-center fw-bold">Toko <br> <span style="color: #24c32f;">x</span>
+                                    <br>
+                                    BMTH
+                                </h2>
                             </div>
                         </div>
                     </a>
@@ -188,10 +197,10 @@
         <div class="m-sizing">
             <div class="text-center text-black py-4">
                 <h1 class="text-center fw-bold m-0"><span style="color: #1bac25;">BEST</span> Product Sellers!</h1>
-                <p class="text-dark"><small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa vel,
-                        blanditiis voluptatum porro
-                        corporis ipsa ipsam, quibusdam laboriosam corrupti voluptatibus omnis optio modi ut eligendi
-                        adipisci sint inventore. Atque, ipsum.</small></p>
+                <p class="text-dark"><small>From timeless classics to the latest trends, these items have earned rave
+                        reviews from our customers. Don’t miss your chance to own what everyone is talking about.
+                        <br>Shop Now
+                        and see why they’re flying off the shelves!</small></p>
             </div>
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4">
 
@@ -202,7 +211,8 @@
                                 <img src="{{ asset('assets/produk/' . $product->image) }}" class="card-img-top"
                                     alt="..." style="object-position: center; object-fit: cover; height: 20rem;">
                                 <div class="card-body">
-                                    <p class="card-title fw-semibold m-0" style="color:#23c92e;">{{ $product->kategori }}</p>
+                                    <p class="card-title fw-semibold m-0" style="color:#23c92e;">{{ $product->kategori }}
+                                    </p>
                                     <h5 class="card-text pb-3">{{ $product->merek }}</h5>
                                     <div class="d-flex justify-content-between align-items-center">
                                         <p class="m-0 fw-bold" style="letter-spacing: 2px;"><small>{{ $product->harga }}
@@ -224,13 +234,14 @@
                                 <img src="{{ asset('assets/produk/' . $product->image) }}" class="card-img-top"
                                     alt="..." style="object-position: center; object-fit: cover; height: 20rem;">
                                 <div class="card-body">
-                                    <p class="card-title fw-semibold m-0" style="color:#23c92e;">{{ $product->kategori }}</p>
+                                    <p class="card-title fw-semibold m-0" style="color:#23c92e;">{{ $product->kategori }}
+                                    </p>
                                     <h5 class="card-text pb-3">{{ $product->merek }}</h5>
                                     <div class="d-flex justify-content-between align-items-center">
                                         <p class="m-0 fw-bold" style="letter-spacing: 2px;"><small>{{ $product->harga }}
                                             </small></p>
                                         <div class="rounded-circle" style="background-color:#23c92e ">
-                                            <i class='bx bx-cart-alt text-white fs-5 p-2' ></i>
+                                            <i class='bx bx-cart-alt text-white fs-5 p-2'></i>
                                         </div>
                                     </div>
                                 </div>

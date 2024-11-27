@@ -14,11 +14,14 @@
                 <div class="col-md-7">
                     <h2>Profile Company</h2>
                     <hr style="color: #009785;">
-                    <h2 class="featurette-heading fw-normal lh-1 align-item-center text-center py-2">Name Toko </h2>
-                    <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam ullam nostrum vel in
-                        odit quam, sequi modi culpa quos, esse odio, fugiat obcaecati voluptatem. Provident nemo dolores
-                        soluta quam voluptas. Saepe a modi assumenda quidem, facere in quos, deleniti eaque ducimus,
-                        repellendus esse cum nihil numquam vel ipsa hic repudiandae.</p>
+                    <h2 class="featurette-heading fw-normal lh-1 align-item-center text-center py-2">Company Name</h2>
+                    <p class="lead">Our company, established with a vision to deliver innovative and high-quality
+                        products, has consistently evolved to meet the dynamic demands of the market. We specialize in
+                        providing a wide range of products tailored to enhance customer experiences across various
+                        industries. With a commitment to excellence, we prioritize customer satisfaction by integrating
+                        cutting-edge technology, sustainable practices, and a keen understanding of market trends. Our
+                        skilled team of professionals ensures that each product is crafted with precision, from concept to
+                        final delivery, adhering to the highest standards of quality and performance. </p>
                 </div>
             </div>
 
@@ -31,11 +34,12 @@
                 <div class="col-md-7">
                     <h2>Process Business</h2>
                     <hr style="color: #009785;">
-                    <h2 class="featurette-heading fw-normal lh-1 align-item-center text-center py-2">Lanjutan Profil</h2>
-                    <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae blanditiis rem
-                        voluptatibus neque voluptates eum temporibus repudiandae ipsa consequatur quo mollitia sapiente,
-                        molestiae deserunt, magnam distinctio odio. Velit aliquid nostrum nam. Suscipit voluptatem id nihil
-                        voluptatibus mollitia in aperiam magni libero sequi aut ipsa quo, nam ad consectetur a neque.</p>
+                    <h2 class="featurette-heading fw-normal lh-1 align-item-center text-center py-2">Our Journey</h2>
+                    <p class="lead">At [Company Name], our fashion business operates through a streamlined and efficient
+                        process that ensures both quality and customer satisfaction at every step. From design conception to
+                        the final product, we emphasize creativity, craftsmanship, and sustainability. The process begins
+                        with our in-house design team, who carefully research the latest trends, materials, and consumer
+                        preferences to create innovative, stylish collections. </p>
                 </div>
             </div>
 

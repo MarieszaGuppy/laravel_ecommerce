@@ -13,18 +13,18 @@
                     <a class="nav-link dropdown-toggle text-white" href="#" role="button"
                         data-bs-toggle="dropdown" aria-expanded="false">
 
-                        Koleksi Baru
+                        New Collection
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item fw-bold" href="#">Toko x Demon Slayer</a></li>
-                        <li><a class="dropdown-item fw-bold" href="#">Toko x Pokemon</a></li>
-                        <li><a class="dropdown-item fw-bold" href="#">Toko x BMTH</a></li>
+                        <li><a class="dropdown-item fw-bold" href="{{ route('home') }}">Toko x Demon Slayer</a></li>
+                        <li><a class="dropdown-item fw-bold" href="{{ route('home') }}">Toko x Pokemon</a></li>
+                        <li><a class="dropdown-item fw-bold" href="{{ route('home') }}">Toko x BMTH</a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown-center">
                     <a class="nav-link dropdown-toggle text-white" href="#" role="button"
                         data-bs-toggle="dropdown" aria-expanded="false">
-                        Produk
+                        Product
                     </a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item fw-semibold" href="/product/baju">Baju</a></li>
@@ -47,7 +47,7 @@
                 @if (Auth::check())
                     <a href="/favorite" class="nav-icon text-decoration-none text-white"><box-icon name='star'
                             color='#ffffff'></box-icon></a>
-                    <a href="/check" class="nav-icon text-decoration-none text-white"><box-icon name='shopping-bag'
+                    <a href="/checkout" class="nav-icon text-decoration-none text-white"><box-icon name='shopping-bag'
                             color='#ffffff'></box-icon></a>
                     <ul class="navbar-nav w-100">
                         <li class="nav-item dropdown-center me-3">
@@ -56,12 +56,11 @@
                                 <div class="d-flex align-items-center">
                                     <div class="rounded-circle bg-white" style="width: 2.5rem; height: 2.5rem;">
                                         @if (Auth::user()->image)
-                                            <img src="{{ asset('assets/profil/' . Auth::user()->image) }}"
+                                            <img src="{{ asset('assets/profile/' . Auth::user()->image) }}"
                                                 alt="" class="img-fluid border border-white rounded-circle"
                                                 style="object-fit: cover; object-position: center; width: 100%; height: 100%;">
                                         @else
-                                            <img src="{{ asset('assets/homes/default/defaultProfil.png') }}"
-                                                alt=""
+                                            <img src="{{ asset('assets/profile/user.png') }}" alt=""
                                                 class="img-fluid border border-white rounded-circle bg-white"
                                                 style="object-fit: cover; object-position: center; width: 100%; height: 100%;">
                                         @endif
@@ -70,13 +69,14 @@
                                 </div>
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href=""><i class='bx bx-user fw-semibold fs-5'></i>
+                                <li><a class="dropdown-item" href="{{ route('profile') }}"><i
+                                            class='bx bx-user fw-semibold fs-5'></i>
                                         Profil</a></li>
-                                <li class="nav-links"><a class="dropdown-item" href=""><i
+                                <li class="nav-links"><a class="dropdown-item" href="{{ route('favorite') }}"><i
                                             class='bx bx-star fw-semibold fs-5'></i>
                                         Favorite</a>
                                 </li>
-                                <li class="nav-links"><a class="dropdown-item" href=""><i
+                                <li class="nav-links"><a class="dropdown-item" href="{{ route('checkout') }}"><i
                                             class='bx bx-shopping-bag fw-semibold fs-5'></i> Shopping Bag</a>
                                 </li>
                                 <li class="nav-links">
